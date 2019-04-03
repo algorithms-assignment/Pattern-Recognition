@@ -22,12 +22,12 @@ public class Point implements Comparable<Point> {
     public double slopeTo(Point that) {
         int changeInY = this.y - that.y;
         int changeInX = this.x - that.x;
-        if(changeInX == 0 && changeInY == 0){
+        if (changeInX == 0 && changeInY == 0) {
             return Double.NEGATIVE_INFINITY;
-        }else if(changeInY == 0){
+        } else if (changeInY == 0) {
             return Double.POSITIVE_INFINITY;
-        }else{
-            return (double) (changeInY) / (double)(changeInX);
+        } else {
+            return (double) (changeInY) / (double) (changeInX);
         }
     }
 
@@ -38,9 +38,9 @@ public class Point implements Comparable<Point> {
 
     @Override
     public int compareTo(Point that) {
-        if(this.y != that.y){
+        if (this.y != that.y) {
             return this.y - that.y;
-        }else{
+        } else {
             return this.x - that.x;
         }
     }
@@ -52,18 +52,11 @@ public class Point implements Comparable<Point> {
             @Override
             public int compare(Point o1, Point o2) {
                 double difference = slopeTo(o1) - slopeTo(o2);
-                if(difference < 0) return -1;
-                else if(difference > 0) return 1;
+                if (difference < 0) return -1;
+                else if (difference > 0) return 1;
                 else return 0;
             }
         };
-
-    }
-
-    public static void main(String args[]) {
-        Point p = new Point(32,77);
-        p.draw();
-
 
     }
 }
