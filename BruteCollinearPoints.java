@@ -63,9 +63,4 @@ public class BruteCollinearPoints {
         found_segments[num_segments++] = new LineSegment(min_point, max_point);
     }
 
-    public static void main(String[] args) {
-        // Empty method
-    }
-
-
 }
