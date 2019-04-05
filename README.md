@@ -1,4 +1,3 @@
 # Pattern Recognition
 
-Author Kaleab Mekonen \n
-Course era Algorithms Part 1 Assignment solution
+Author Kaleab Mekonen, Course era Algorithms Part 1 Assignment solution
